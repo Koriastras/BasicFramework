@@ -30,8 +30,6 @@ namespace BasicFramework.Tests
             Logger.Info("Wait example");
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(5));
             wait.Until(x => x.FindElement(By.CssSelector("#submit")).Enabled);
-           // IWebElement title = Driver.FindElement(By.CssSelector("#example-modal-sizes-title-lg"));
-           // Assert.IsNotNull(title);
             Assert.AreEqual(ExpectedTitle, homePage.GetHeaderTitle(), "Title text differs from expected!");
 
 
