@@ -4,7 +4,7 @@ namespace BasicFramework.Framework.Models
 {
     public class User
     {
-        public string FirstName { get; set; } //Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65))).ToString();
+        public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Mobile { get; set; }
@@ -32,9 +32,7 @@ namespace BasicFramework.Framework.Models
         }
 
         public static string RandomNumber()
-        {   // Варіант для Влада
-            // Random R = new Random();
-            //return (R.Next(0, 100000) * R.Next(0, 100000)).ToString().PadLeft(10, '0');
+        {   
             return DateTime.UtcNow.Ticks.ToString().Substring(8);
         }
     }
