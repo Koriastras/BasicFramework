@@ -1,4 +1,4 @@
-﻿using BasicFramework.Framework.Models;
+using BasicFramework.Framework.Models;
 using OpenQA.Selenium;
 using System;
 using System.IO;
@@ -14,9 +14,9 @@ namespace BasicFramework.Pages
         private IWebElement FirstNameBox => Driver.FindElement(By.Id("firstName"));
         private IWebElement LastNameBox => Driver.FindElement(By.Id("lastName"));
         private IWebElement EmailBox => Driver.FindElement(By.Id("userEmail"));
-        private IWebElement GenderBox => Driver.FindElement(By.XPath("//label[text() = 'Female']"));   //("//*[@class = 'custom-control custom-radio custom-control-inline'] // child :: label"));
+        private IWebElement GenderBox => Driver.FindElement(By.XPath("//label[text() = 'Female']"));  
         private IWebElement MobileBox => Driver.FindElement(By.Id("userNumber"));
-        private IWebElement DateOfBirthBox => Driver.FindElement(By.Id("dateOfBirthInput")); ////div[@aria-label = 'Choose Wednesday, May 18th, 1994']
+        private IWebElement DateOfBirthBox => Driver.FindElement(By.Id("dateOfBirthInput")); 
         private IWebElement ChooseMonth => Driver.FindElement(By.XPath("//select[@class = 'react-datepicker__month-select']//child::option[@value = '4']"));
 
         private IWebElement ChooseYear => Driver.FindElement(By.XPath("//select[@class = 'react-datepicker__year-select']//child::option[@value = '1994']"));
@@ -26,7 +26,7 @@ namespace BasicFramework.Pages
         private IWebElement HobbiesBox => Driver.FindElement(By.XPath("//label[text() = 'Reading']"));
         private IWebElement Picture => Driver.FindElement(By.Id("uploadPicture"));
 
-        private IWebElement CurrentAddressBox => Driver.FindElement(By.Id("currentAddress"));  //("//div[@class = 'col-md-9 col-sm-12']//child::textarea"));
+        private IWebElement CurrentAddressBox => Driver.FindElement(By.Id("currentAddress")); 
 
         private IWebElement StateBox => Driver.FindElement(By.CssSelector("#state"));
         private IWebElement StateBoxChoose => Driver.FindElement(By.XPath("//div[text() = 'Uttar Pradesh']"));
